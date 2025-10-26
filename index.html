@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>CP1: Brownian Motion</title>
-
-
+    <title>Magische Oceaan - p5.js</title>
     <style>
         body {
-            padding:    0;
-            
-            margin:     0;
-            text-align: center;     /* center <canvas> on the page */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #00111a, #00334d);
+            color: white;
+            font-family: monospace;
+            text-align: center;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-size: 14px;
         }
     </style>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
     <script src="sketch.js"></script>
 </head>
-
 <body>
-
+    <div id="info">
+        🌊 Magische Oceaan 🌊<br>
+        <b>Muis:</b> Beïnvloed golven | <b>Spatie:</b> verander kleurmodus
+    </div>
 </body>
-
 </html>
